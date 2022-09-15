@@ -5,19 +5,21 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+/**
+ * Given a piece of text, it should output each word in the text and the number of times it occurred. 
+ * The words should be sorted by frequency, in descending order.
+ * Words with the same frequency can be in any order.
+ * 
+ * For example for the input “the cat is in the bag”, output should be:
+ * 2 the
+ * 1 cat
+ * 1 is
+ * 1 in
+ * 1 bag
+ */
 public final class App {
+
     /**
-     * @JavaDoc
-     * Given a piece of text, it should output each word in the text and the number of times it occurred. 
-     * The words should be sorted by frequency, in descending order.
-     * Words with the same frequency can be in any order.
-     * 
-     * For example for the input “the cat is in the bag”, output should be:
-     * 2 the
-     * 1 cat
-     * 1 is
-     * 1 in
-     * 1 bag
      * @param args The text to count and sort decending by frequency. Defaults to "The cat is in the bag bag bag." if unset.
      */
     public static void main(String[] args) {
