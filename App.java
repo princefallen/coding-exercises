@@ -3,7 +3,6 @@ package com.wordfrequency;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map.Entry;
 
 public final class App {
@@ -34,7 +33,7 @@ public final class App {
             frequentWords.merge(word.toLowerCase(), 1, (oldValue, newValue) -> oldValue + newValue);
         }
 
-        List<Entry<String, Integer>> wordsByFrequency = new ArrayList<Entry<String, Integer>>(frequentWords.entrySet());
+        ArrayList<Entry<String, Integer>> wordsByFrequency = new ArrayList<Entry<String, Integer>>(frequentWords.entrySet());
         wordsByFrequency.sort(Collections.reverseOrder(Entry.comparingByValue()));
 
         for (Entry<String, Integer> entry: wordsByFrequency) {
